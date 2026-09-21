@@ -43,3 +43,72 @@ body.light-theme {
 * {
     transition:background-color var(--transition),border-color var(--transition),color var(--transition),box-shadow var(--transition)
 }
+
+
+/* ========================================
+   FORMULARIO DE CONTACTO
+   ======================================== */
+
+.contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--line, #d9d9d9);
+    border-radius: 8px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/* ========================================
+   TARJETAS DE PROYECTOS
+   ======================================== */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    padding: 1.5rem;
+    border: 1px solid var(--line, #d9d9d9);
+    border-radius: 12px;
+}
+
+.project-number {
+    font-weight: 700;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.project-tags span {
+    padding: 0.3rem 0.6rem;
+    border-radius: 20px;
+    background: #f1f1f1;
+    font-size: 0.85rem;
+}

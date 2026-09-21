@@ -1,5 +1,6 @@
 body {
-    background:radial-gradient(circle at 15% 5%,rgba(124,92,255,.13),transparent 26rem),radial-gradient(circle at 90% 20%,rgba(33,212,253,.09),transparent 24rem),var(--bg);
+    background:radial-gradient(circle at 15% 5%,rgba(124,92,255,.13),transparent 26rem),
+    radial-gradient(circle at 90% 20%,rgba(33,212,253,.09),transparent 24rem),var(--bg);
     color:var(--text);
     font-family:var(--font-body);
     line-height:1.6;

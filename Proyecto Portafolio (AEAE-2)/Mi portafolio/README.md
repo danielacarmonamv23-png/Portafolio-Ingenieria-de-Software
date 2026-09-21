@@ -1,41 +1,48 @@
-# Portafolio Web — Maudin Daniela Valderrama Carmona
+# Mi Portafolio Web
 
-Portafolio profesional para la actividad “Mi Portafolio Web Interactivo”.
+## Descripción
 
-**Perfil:** Maudin Daniela Valderrama Carmona · Ingeniería de Software
+Portafolio web personal desarrollado como actividad integradora. El proyecto
+integra HTML5, CSS3 y JavaScript.
 
-**Intereses:** desarrollo de aplicaciones y ciberseguridad.
+## Tecnologías utilizadas
 
-**Tecnologías básicas:** Python, Java, JavaScript, HTML5 y CSS3.
-
-## Incluye
-- HTML5 semántico y accesible.
-- CSS3 responsive con Grid/Flexbox y variables.
-- Menú móvil y modo claro/oscuro.
-- Animaciones sutiles y soporte para `prefers-reduced-motion`.
-- Proyectos generados dinámicamente desde JavaScript.
-- Formulario con validación HTML5 y JavaScript.
-- SEO básico y GitHub Pages.
-- README, requisitos, arquitectura, guía de personalización y mockup.
+- HTML5
+- CSS3
+- JavaScript
+- Git y GitHub
 
 ## Estructura
+
 ```text
 mi-portafolio/
 ├── index.html
 ├── css/
 ├── js/
-├── assets/images/perfil-maudin.png
-├── assets/icons/
-├── docs/
-└── README.md
+├── assets/
+└── documentacion/
 ```
 
-## Publicación
-1. Crea un repositorio público.
-2. Sube el contenido manteniendo las carpetas.
-3. Realiza mínimo 5 commits descriptivos.
-4. GitHub → Settings → Pages → rama principal → carpeta raíz.
-5. Copia la URL pública para la entrega.
+## Cómo ejecutar
 
-## Importante
-Las tarjetas 2 y 3 de proyectos están marcadas como “PRÓXIMAMENTE” hasta que se agreguen proyectos reales. Esto evita presentar como reales proyectos que todavía no has compartido.
+1. Descargar el proyecto.
+2. Abrir la carpeta en Visual Studio Code.
+3. Abrir `index.html` en un navegador.
+4. Verificar las imágenes, estilos y funciones.
+
+## Funcionalidades
+
+- Navegación entre secciones.
+- Diseño responsive.
+- Presentación personal.
+- Tres proyectos.
+- Formulario de contacto simulado con JavaScript.
+- Manipulación del DOM.
+
+## Documentación
+
+La documentación adicional se encuentra en la carpeta `documentacion`.
+
+## Autor
+
+Maudin Daniela Valderrama Carmona

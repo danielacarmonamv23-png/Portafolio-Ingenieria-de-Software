@@ -1,4 +1,8 @@
-const form=document.getElementById("contactForm"),status=document.getElementById("formStatus"),fields=[document.getElementById("nombre"),document.getElementById("email"),document.getElementById("asunto"),document.getElementById("mensaje")];
+const form=document.getElementById("contactForm"),
+status=document.getElementById("formStatus"),
+fields=[document.getElementById("nombre"),
+document.getElementById("email"),document.getElementById("asunto"),
+document.getElementById("mensaje")];
 function validateField(f){const ok=f.checkValidity();
 f.classList.toggle("invalid",!ok);
 return ok}fields.forEach(f=>f.addEventListener("input",()=>validateField(f)));

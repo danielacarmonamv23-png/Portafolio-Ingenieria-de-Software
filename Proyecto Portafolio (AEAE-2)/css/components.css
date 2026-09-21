@@ -1,0 +1,22 @@
+
+
+/* Tarjetas de los proyectos */
+.project-card {
+    padding: 20px;
+    border-radius: 12px;
+    background: var(--color-card, #ffffff);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-bottom: 10px;
+}

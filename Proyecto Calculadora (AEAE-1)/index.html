@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Calculadora</h1>
+  </header>
+
+  <main>
+    <section class="calculator-section" aria-label="Calculadora">
+      <div class="calculator">
+        <div id="display" class="display" aria-live="polite">0</div>
+
+        <div class="buttons">
+          <button class="button action" data-action="clear">C</button>
+          <button class="button action" data-action="delete">⌫</button>
+          <button class="button operator" data-value="%">%</button>
+          <button class="button operator" data-value="/">÷</button>
+
+          <button class="button" data-value="7">7</button>
+          <button class="button" data-value="8">8</button>
+          <button class="button" data-value="9">9</button>
+          <button class="button operator" data-value="*">×</button>
+
+          <button class="button" data-value="4">4</button>
+          <button class="button" data-value="5">5</button>
+          <button class="button" data-value="6">6</button>
+          <button class="button operator" data-value="-">−</button>
+
+          <button class="button" data-value="1">1</button>
+          <button class="button" data-value="2">2</button>
+          <button class="button" data-value="3">3</button>
+          <button class="button operator" data-value="+">+</button>
+
+          <button class="button zero" data-value="0">0</button>
+          <button class="button" data-value=".">.</button>
+          <button class="button equals" data-action="calculate">=</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info">
+      <h2>Sobre el proyecto</h2>
+      <p>
+        Esta calculadora permite realizar operaciones matemáticas básicas.
+        El proyecto utiliza HTML para la estructura, CSS para el diseño y
+        JavaScript para la lógica y la interacción con los botones.
+      </p>
+
+      <div class="cards">
+        <article>
+          <h3>HTML</h3>
+          <p>Organiza la estructura, los textos y los botones de la página.</p>
+        </article>
+        <article>
+          <h3>CSS</h3>
+          <p>Define la apariencia, distribución y adaptación a diferentes pantallas.</p>
+        </article>
+        <article>
+          <h3>JavaScript</h3>
+          <p>Controla las operaciones y los eventos realizados por el usuario.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Proyecto académico — Ingeniería de Software</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

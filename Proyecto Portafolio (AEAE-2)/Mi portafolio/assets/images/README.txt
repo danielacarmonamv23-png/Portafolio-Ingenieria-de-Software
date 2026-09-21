@@ -1,0 +1,1 @@
+La fotografía de perfil incluida fue proporcionada por la autora para este portafolio.

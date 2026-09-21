@@ -1,0 +1,16 @@
+const projects=[{number:"01",title:"Calculadora Web",description:"Calculadora desarrollada como proyecto práctico para aplicar estructura HTML, estilos CSS y lógica básica con JavaScript.",tag:"PUBLICADO",tech:["HTML","CSS","JavaScript"],url:"https://danielacarmonamv23-png.github.io/Calculadora/",soon:false},{number:"02",title:"Proyecto académico",description:"Espacio reservado para uno de tus próximos proyectos. Aquí se añadirá una descripción real cuando compartas tu repositorio.",tag:"PRÓXIMAMENTE",tech:["HTML","CSS","JavaScript"],url:"#",soon:true},{number:"03",title:"Proyecto académico",description:"Espacio reservado para otro proyecto. La tarjeta está preparada para conectarse directamente con tu repositorio o demo.",tag:"PRÓXIMAMENTE",tech:["Python","Java","En aprendizaje"],url:"#",soon:true}];
+const projectsContainer=document.getElementById("projectsContainer");
+projectsContainer.innerHTML=projects.map(p=>`<article class="project-card ${p.soon?"project-card--soon":""} reveal"><div class="project-top"><span class="project-number">${p.number}</span><span class="project-tag">${p.tag}</span></div><div class="project-content"><h3>${p.title}</h3><p>${p.description}</p><div class="project-techs">${p.tech.map(t=>`<span>${t}</span>`).join("")}</div>${p.soon?`<span class="project-link">Se actualizará con tu repositorio →</span>`:`<a class="project-link" href="${p.url}" target="_blank" rel="noopener noreferrer">Abrir proyecto ↗</a>`}</div></article>`).join("");
+const menuToggle=document.getElementById("menuToggle"),mainMenu=document.getElementById("mainMenu");
+menuToggle.addEventListener("click",()=>{const open=mainMenu.classList.toggle("is-open");
+menuToggle.setAttribute("aria-expanded",String(open));
+menuToggle.setAttribute("aria-label",open?"Cerrar menú":"Abrir menú")});
+mainMenu.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{mainMenu.classList.remove("is-open");
+menuToggle.setAttribute("aria-expanded","false")}));
+const themeToggle=document.getElementById("themeToggle"),themeIcon=document.getElementById("themeIcon");
+function setTheme(t){document.body.classList.toggle("light-theme",t==="light");
+themeIcon.textContent=t==="light"?"☀":"☾";
+themeToggle.setAttribute("aria-label",t==="light"?"Activar tema oscuro":"Activar tema claro");
+localStorage.setItem("portfolio-theme",t)}setTheme(localStorage.getItem("portfolio-theme")||"dark");
+themeToggle.addEventListener("click",()=>setTheme(document.body.classList.contains("light-theme")?"dark":"light"));
+document.getElementById("year").textContent=new Date().getFullYear();

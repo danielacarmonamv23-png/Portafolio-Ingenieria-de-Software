@@ -1,0 +1,405 @@
+.eyebrow {
+    display:flex;
+    align-items:center;
+    gap:9px;
+    color:var(--primary-2);
+    font-size:.72rem;
+    font-weight:800;
+    letter-spacing:.13em;
+    text-transform:uppercase
+}
+
+.status-dot {
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:var(--success);
+    box-shadow:0 0 0 5px rgba(84,224,165,.09),0 0 16px rgba(84,224,165,.6)
+}
+
+.gradient-text {
+    color:transparent;
+    background:var(--gradient);
+    -webkit-background-clip:text;
+    background-clip:text
+}
+
+.button {
+    min-height:48px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:11px;
+    padding:0 18px;
+    border-radius:13px;
+    font-weight:800;
+    font-size:.84rem;
+    cursor:pointer;
+    transition:transform var(--transition),box-shadow var(--transition),border-color var(--transition)
+}
+
+.button:hover {
+    transform:translateY(-2px)
+}
+
+.button--primary {
+    color:#fff;
+    background:var(--gradient);
+    box-shadow:0 14px 35px rgba(124,92,255,.24)
+}
+
+.button--ghost {
+    color:var(--text);
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.025)
+}
+
+.theme-toggle {
+    width:39px;
+    height:39px;
+    display:grid;
+    place-items:center;
+    border:1px solid var(--line);
+    border-radius:11px;
+    background:var(--surface-2);
+    color:var(--text);
+    cursor:pointer
+}
+
+.text-link {
+    color:var(--text);
+    font-weight:800;
+    font-size:.85rem;
+    white-space:nowrap
+}
+
+.text-link:hover {
+    color:var(--primary-2)
+}
+
+.card-kicker {
+    color:var(--muted-2);
+    font-size:.65rem;
+    font-weight:800;
+    letter-spacing:.13em
+}
+
+.focus-list {
+    display:grid;
+    gap:10px;
+    margin-top:18px
+}
+
+.focus-list li {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:10px 0;
+    border-bottom:1px solid var(--line);
+    color:var(--muted);
+    font-size:.82rem
+}
+
+.focus-list li:last-child {
+    border-bottom:0
+}
+
+.focus-list span,.timeline-number {
+    color:var(--primary-2);
+    font:800 .72rem var(--font-display)
+}
+
+.skill-icon {
+    width:44px;
+    height:44px;
+    display:grid;
+    place-items:center;
+    border:1px solid var(--line);
+    border-radius:13px;
+    background:var(--gradient-soft);
+    font-family:var(--font-display);
+    font-weight:800
+}
+
+.skill-card h3 {
+    margin-top:20px;
+    font:700 1.05rem var(--font-display)
+}
+
+.skill-card p {
+    margin-top:8px;
+    color:var(--muted);
+    font-size:.78rem
+}
+
+.skill-level {
+    height:4px;
+    margin-top:18px;
+    overflow:hidden;
+    border-radius:99px;
+    background:rgba(255,255,255,.08)
+}
+
+.skill-level span {
+    display:block;
+    height:100%;
+    border-radius:inherit;
+    background:var(--gradient)
+}
+
+.skill-card small {
+    display:block;
+    margin-top:8px;
+    color:var(--muted-2);
+    font-size:.65rem
+}
+
+.interest-arrow {
+    color:var(--primary-2);
+    font-size:1.4rem
+}
+
+.project-card {
+    position:relative;
+    overflow:hidden;
+    min-height:390px;
+    display:flex;
+    flex-direction:column;
+    border-radius:var(--radius)
+}
+
+.project-card:before {
+    content:"";
+    position:absolute;
+    inset:0;
+    background:radial-gradient(circle at 100% 0%,rgba(124,92,255,.16),transparent 35%);
+    pointer-events:none
+}
+
+.project-top {
+    position:relative;
+    padding:25px 25px 0;
+    display:flex;
+    justify-content:space-between;
+    gap:10px
+}
+
+.project-number {
+    color:var(--muted-2);
+    font:800 .7rem var(--font-display)
+}
+
+.project-tag {
+    padding:5px 9px;
+    border:1px solid var(--line);
+    border-radius:999px;
+    color:var(--primary-2);
+    font-size:.61rem;
+    font-weight:800
+}
+
+.project-content {
+    position:relative;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    flex:1
+}
+
+.project-content h3 {
+    font:700 1.35rem var(--font-display)
+}
+
+.project-content p {
+    margin-top:10px;
+    color:var(--muted);
+    font-size:.82rem
+}
+
+.project-techs {
+    display:flex;
+    flex-wrap:wrap;
+    gap:6px;
+    margin-top:18px
+}
+
+.project-techs span {
+    padding:6px 8px;
+    border-radius:7px;
+    background:var(--surface-2);
+    color:var(--muted);
+    font-size:.62rem
+}
+
+.project-link {
+    margin-top:auto;
+    padding-top:24px;
+    color:var(--text);
+    font-size:.78rem;
+    font-weight:800
+}
+
+.project-link:hover {
+    color:var(--primary-2)
+}
+
+.project-card--soon {
+    opacity:.88;
+    border-style:dashed
+}
+
+.project-card--soon .project-tag {
+    color:var(--accent)
+}
+
+.timeline-number {
+    width:34px;
+    height:34px;
+    display:grid;
+    place-items:center;
+    border-radius:10px;
+    background:var(--gradient-soft)
+}
+
+.timeline-item h3 {
+    margin-top:42px;
+    font:700 1.1rem var(--font-display)
+}
+
+.timeline-item p {
+    margin-top:8px;
+    color:var(--muted);
+    font-size:.78rem
+}
+
+input,textarea {
+    width:100%;
+    margin-top:7px;
+    padding:13px 14px;
+    border:1px solid var(--line);
+    border-radius:12px;
+    outline:none;
+    background:rgba(0,0,0,.13);
+    color:var(--text)
+}
+
+body.light-theme input,body.light-theme textarea {
+    background:rgba(255,255,255,.8)
+}
+
+label {
+    color:var(--muted);
+    font-size:.75rem;
+    font-weight:700
+}
+
+input::placeholder,textarea::placeholder {
+    color:var(--muted-2)
+}
+
+input:focus,textarea:focus {
+    border-color:rgba(33,212,253,.7);
+    box-shadow:0 0 0 4px rgba(33,212,253,.08)
+}
+
+input.invalid,textarea.invalid {
+    border-color:#ff6d9f
+}
+
+.form-status {
+    color:var(--muted);
+    font-size:.74rem
+}
+
+.form-status.success {
+    color:var(--success)
+}
+
+.form-status.error {
+    color:#ff7ba9
+}
+
+.skip-link {
+    position:fixed;
+    left:12px;
+    top:12px;
+    z-index:100;
+    padding:10px 14px;
+    border-radius:10px;
+    background:var(--text);
+    color:var(--bg);
+    transform:translateY(-150%)
+}
+
+.skip-link:focus {
+    transform:translateY(0)
+}
+
+.site-glow {
+    position:fixed;
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    pointer-events:none;
+    filter:blur(90px);
+    opacity:.08;
+    z-index:-1
+}
+
+.site-glow--one {
+    top:20%;
+    left:-180px;
+    background:var(--primary)
+}
+
+.site-glow--two {
+    right:-180px;
+    bottom:10%;
+    background:var(--primary-2)
+}
+
+.reveal {
+    opacity:0;
+    transform:translateY(22px)
+}
+
+.reveal.is-visible {
+    opacity:1;
+    transform:translateY(0);
+    transition:opacity 650ms ease,transform 650ms ease
+}
+
+.reveal-delay {
+    transition-delay:90ms
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+    scroll-behavior:auto
+}
+
+*,*::before,*::after {
+    animation-duration:.01ms!important;
+    transition-duration:.01ms!important
+}
+
+.reveal {
+    opacity:1;
+    transform:none
+}
+
+
+}
+
+/* Presentación estudiantil: limpia y sencilla */
+.btn, .nav-link, .project-card, .skill-card {
+    transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: translateY(-2px);
+}

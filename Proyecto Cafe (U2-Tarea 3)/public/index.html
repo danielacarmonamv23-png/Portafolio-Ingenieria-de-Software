@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Proyecto Café | Un momento para disfrutar</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+
+    <header>
+        <div class="encabezado-contenido">
+            <span class="etiqueta">CAFÉ · SABOR · EXPERIENCIA</span>
+
+            <h1>PROYECTO CAFÉ</h1>
+
+            <p>Un momento para disfrutar, un sabor para recordar.</p>
+
+            <a href="#pedidos" class="boton-encabezado">
+                REALIZAR MI PEDIDO ↓
+            </a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="presentacion">
+            <span class="subtitulo">BIENVENIDO A NUESTRA CAFETERÍA</span>
+
+            <h2>Pequeños momentos, grandes sabores.</h2>
+
+            <p>
+                Creamos un espacio para disfrutar de una buena taza de café,
+                compartir momentos especiales y acompañar tu día con sabores
+                que hacen la diferencia.
+            </p>
+
+            <div class="caracteristicas">
+
+                <article class="caracteristica">
+                    <span>☕</span>
+                    <h3>Buen café</h3>
+                    <p>Sabores que acompañan tus mejores momentos.</p>
+                </article>
+
+                <article class="caracteristica">
+                    <span>♡</span>
+                    <h3>Hecho con cariño</h3>
+                    <p>Cada pedido merece una atención especial.</p>
+                </article>
+
+                <article class="caracteristica">
+                    <span>✿</span>
+                    <h3>Ambiente acogedor</h3>
+                    <p>Un lugar para disfrutar y compartir.</p>
+                </article>
+
+            </div>
+        </section>
+
+        
+        <section class="seccion-pedidos" id="pedidos">
+
+            <div class="formulario-contenido">
+
+                <span class="subtitulo">TU EXPERIENCIA COMIENZA AQUÍ</span>
+
+                <h2>Realiza tu pedido</h2>
+
+                <p class="descripcion">
+                    Completa los siguientes datos y registra tu pedido.
+                </p>
+
+                <form id="formPedido">
+
+                    <div class="grupo-campo">
+                        <label for="cliente">Nombre del cliente</label>
+                        <input
+                            type="text"
+                            id="cliente"
+                            name="cliente"
+                            placeholder="Escribe tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="producto">Producto</label>
+                        <input
+                            type="text"
+                            id="producto"
+                            name="producto"
+                            placeholder="¿Qué deseas ordenar?"
+                            required
+                        >
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="cantidad">Cantidad</label>
+                        <input
+                            type="number"
+                            id="cantidad"
+                            name="cantidad"
+                            placeholder="Número de unidades"
+                            min="1"
+                            required
+                        >
+                    </div>
+
+                    <div class="grupo-campo">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea
+                            id="observaciones"
+                            name="observaciones"
+                            placeholder="¿Alguna indicación especial? (Opcional)"
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Registrar mi pedido →
+                    </button>
+
+                </form>
+
+                <p id="mensaje"></p>
+
+            </div>
+
+            <div class="detalle-decorativo">
+                <span>☕</span>
+                <p>Un buen día comienza con un buen café.</p>
+                <small>GRACIAS POR ELEGIRNOS</small>
+            </div>
+
+        </section>
+
+    </main>
+
+   
+    <footer>
+        <p>PROYECTO CAFÉ</p>
+        <span>Hecho con cariño · Café, sabor y buenos momentos</span>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+    --crema: #F5EBDD;
+    --oliva: #78815A;
+    --oliva-oscuro: #596342;
+    --cafe: #79513B;
+    --cafe-oscuro: #513525;
+    --negro: #171513;
+    --rosado: #F2C9D1;
+    --blanco: #FFFDF8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', Arial, sans-serif;
+    background-color: var(--crema);
+    color: var(--negro);
+}
+
+
+
+header {
+    min-height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--blanco);
+    background:
+        linear-gradient(135deg, rgba(45, 35, 25, 0.85), rgba(89, 99, 66, 0.82)),
+        linear-gradient(45deg, var(--cafe), var(--oliva));
+    border-bottom: 7px solid var(--rosado);
+}
+
+.encabezado-contenido {
+    max-width: 750px;
+}
+
+.etiqueta,
+.subtitulo {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.etiqueta {
+    color: var(--rosado);
+}
+
+header h1 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: clamp(42px, 7vw, 70px);
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+header p {
+    color: var(--crema);
+    font-size: 17px;
+    margin-bottom: 35px;
+}
+
+.boton-encabezado {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--rosado);
+    color: var(--cafe-oscuro);
+    padding: 15px 28px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.boton-encabezado:hover {
+    background-color: var(--crema);
+    transform: translateY(-3px);
+}
+
+
+
+main {
+    width: 100%;
+}
+
+.presentacion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 85px 25px;
+    text-align: center;
+}
+
+.subtitulo {
+    color: var(--oliva);
+}
+
+.presentacion h2,
+.seccion-pedidos h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--cafe-oscuro);
+    font-size: clamp(28px, 4vw, 38px);
+    margin-bottom: 20px;
+}
+
+.presentacion > p {
+    max-width: 700px;
+    margin: auto;
+    color: #71675D;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+
+
+.caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.caracteristica {
+    background: var(--blanco);
+    padding: 35px 22px;
+    border-radius: 18px;
+    border-bottom: 4px solid var(--rosado);
+    box-shadow: 0 8px 25px rgba(81, 53, 37, 0.07);
+    transition: 0.3s;
+}
+
+.caracteristica:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 30px rgba(81, 53, 37, 0.13);
+}
+
+.caracteristica span {
+    display: block;
+    font-size: 38px;
+    margin-bottom: 18px;
+    color: var(--oliva);
+}
+
+.caracteristica h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--cafe);
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.caracteristica p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #82766B;
+}
+
+
+
+.seccion-pedidos {
+    background: linear-gradient(135deg, #E9E5D5, #F5EBDD);
+    padding: 75px 25px;
+    display: grid;
+    grid-template-columns: minmax(0, 590px) minmax(200px, 300px);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.formulario-contenido {
+    background: var(--blanco);
+    padding: 42px;
+    border-radius: 22px;
+    box-shadow: 0 15px 40px rgba(81, 53, 37, 0.12);
+}
+
+.formulario-contenido h2 {
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    color: #82766B;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cafe-oscuro);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #E2D5C6;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: var(--negro);
+    background: #FBF8F2;
+    transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #A99B8E;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--oliva);
+    box-shadow: 0 0 0 4px rgba(120, 129, 90, 0.13);
+    background: white;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+
+
+button {
+    background: var(--oliva);
+    color: white;
+    border: none;
+    padding: 17px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--cafe);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(81, 53, 37, 0.18);
+}
+
+
+
+#mensaje {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--oliva-oscuro);
+    line-height: 1.6;
+}
+
+
+
+.detalle-decorativo {
+    text-align: center;
+    padding: 35px 15px;
+    color: var(--cafe);
+}
+
+.detalle-decorativo span {
+    display: block;
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.detalle-decorativo p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 25px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.detalle-decorativo small {
+    color: var(--oliva);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: var(--cafe-oscuro);
+    color: var(--crema);
+}
+
+footer p {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+footer span {
+    font-size: 12px;
+    color: var(--rosado);
+}
+
+
+
+@media (max-width: 800px) {
+    .caracteristicas {
+        grid-template-columns: 1fr;
+    }
+
+    .seccion-pedidos {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .detalle-decorativo {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        min-height: 380px;
+        padding: 45px 18px;
+    }
+
+    header h1 {
+        letter-spacing: 2px;
+    }
+
+    .presentacion {
+        padding: 60px 20px;
+    }
+
+    .seccion-pedidos {
+        padding: 45px 15px;
+    }
+
+    .formulario-contenido {
+        padding: 28px 20px;
+    }
+}
